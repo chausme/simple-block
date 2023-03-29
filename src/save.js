@@ -17,7 +17,7 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @param {Object} props.attributes Available block attributes.
  * @return {WPElement} Element to render.
  */
-export default function save( { attributes } ) {
-	const blockProps = useBlockProps.save();
-	return <div { ...blockProps }>{ attributes.message }</div>;
+export default function save({ attributes }) {
+    const blockProps = useBlockProps.save();
+    return <div {...blockProps}>{attributes.message}</div>;
 }
